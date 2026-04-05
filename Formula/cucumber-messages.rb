@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.23.0 at 2026-04-05T22:07:12.186795072+02:00
+# Generated with JReleaser 1.23.0 at 2026-04-05T22:12:52.618436718+02:00
 
 class CucumberMessages < Formula
   desc "A commandline interface to work with Cucumber Messages"
@@ -8,19 +8,19 @@ class CucumberMessages < Formula
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/cucumber/messages-cli/releases/download/v0.2.12/cucumber-messages-standalone-0.2.12-linux-aarch_64.zip"
-    sha256 "0c1869b6e79f44de173bd53317bb93d808dea0868c0153858f623495bd85fe53"
+    sha256 "f874224eb2cacdfc0d07a2430fbabd3ab8c937b651c1d09c37914fdd67fa045e"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/cucumber/messages-cli/releases/download/v0.2.12/cucumber-messages-standalone-0.2.12-linux-x86_64.zip"
-    sha256 "95f71cf8a056224d704e308a7972900902441497966d83d3e230e5446e17ad8b"
+    sha256 "eb87d98b2b94b945bc5b83288512952d514b34cd47a4420c60deb26c8aaa7d0a"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/cucumber/messages-cli/releases/download/v0.2.12/cucumber-messages-standalone-0.2.12-osx-aarch_64.zip"
-    sha256 "38032a87240c386c5c7f57d486f9b8d3505aefb29d2f564e0e112f063dc0e76b"
+    sha256 "1d9320c33b090484f860d43d1bb4e2567179bda86bd1589d6a8cb5d65bf4d9ef"
   end
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/cucumber/messages-cli/releases/download/v0.2.12/cucumber-messages-standalone-0.2.12-osx-x86_64.zip"
-    sha256 "6814cf26f8f4e2477c0a598b35c223b9fabc46937fd96b77aaf0abfa1d3bad36"
+    sha256 "eda573343e92de2191a729b6ce428115273e9f5828d8210f2dcd9eee603a306b"
   end
 
 
