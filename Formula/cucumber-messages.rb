@@ -1,26 +1,26 @@
-# Generated with JReleaser 1.23.0 at 2026-04-05T22:48:33.954541881Z
+# Generated with JReleaser 1.23.0 at 2026-04-06T00:08:46.772505111Z
 
 class CucumberMessages < Formula
   desc "A commandline interface to work with Cucumber Messages"
   homepage "https://cucumber.io"
-  version "0.2.14"
+  version "0.3.0"
   license "MIT AND Apache-2.0 AND (GPL-2.0 WITH Classpath-exception-2.0)"
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/cucumber/messages-cli/releases/download/v0.2.14/cucumber-messages-standalone-0.2.14-linux-aarch_64.zip"
-    sha256 "82ddcf7e327da606a51283b7f67a126a5e0345fe3f24d9cf9202b26764f0251f"
+    url "https://github.com/cucumber/messages-cli/releases/download/v0.3.0/cucumber-messages-standalone-0.3.0-linux-aarch_64.zip"
+    sha256 "434f22bdb37ec57f337753c2c2b8b8b955f9f3030fe2e823fb192c55c0849f5d"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/cucumber/messages-cli/releases/download/v0.2.14/cucumber-messages-standalone-0.2.14-linux-x86_64.zip"
-    sha256 "af46333700b9ebc4b7a04239eb5f3e926479217d722e14c52e011dc81033ca7d"
+    url "https://github.com/cucumber/messages-cli/releases/download/v0.3.0/cucumber-messages-standalone-0.3.0-linux-x86_64.zip"
+    sha256 "f5387f9af100d6d95be5e385df8148ecb0521f849358fafb74026e7c8b96f6d5"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/cucumber/messages-cli/releases/download/v0.2.14/cucumber-messages-standalone-0.2.14-osx-aarch_64.zip"
-    sha256 "2d7dab1e977627c42cd5da1c6dc3ddc8c5ba888a6900868c623cae6daa36c566"
+    url "https://github.com/cucumber/messages-cli/releases/download/v0.3.0/cucumber-messages-standalone-0.3.0-osx-aarch_64.zip"
+    sha256 "0410c07c7ad16c2242c21f9a98c70013ec9bba06766378f3c4b2fe3be3ae5767"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/cucumber/messages-cli/releases/download/v0.2.14/cucumber-messages-standalone-0.2.14-osx-x86_64.zip"
-    sha256 "37e9e4eecc5ffb5090cea1639681ff68b6e554e9c4d86a08c31d6d012a0cf5a2"
+    url "https://github.com/cucumber/messages-cli/releases/download/v0.3.0/cucumber-messages-standalone-0.3.0-osx-x86_64.zip"
+    sha256 "69612725d4ca8e36c15447dcc4a605772d0898f26cd0a569c244fadf6b28f1e2"
   end
 
 
@@ -42,6 +42,6 @@ class CucumberMessages < Formula
 
   test do
     output = shell_output("#{bin}/cucumber-messages --version")
-    assert_match "0.2.14", output
+    assert_match "0.3.0", output
   end
 end
